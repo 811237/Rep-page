@@ -8,6 +8,9 @@
     .ay {
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
     }
+    .ya {
+        font-family: monospace;
+    }
     h1, h2 {
         font-weight: 720;
         font-size: 34px;
@@ -23,6 +26,9 @@
         color: #000000;
         padding: 0px 0px 24px;
     }
+    h3 {
+        text-align: center;
+    }
     p {
         font-size: 18px;
         line-height: 28px;
@@ -32,31 +38,37 @@
 
     /* button styling begin */
     button {
-        border-radius: 25px;
-        border: 1px solid #8064e9;
-        background: #8064e9;
+        display: block;
+        border-radius: 30px;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
         color: #ffffff;
         font-size: 16px;
-        line-height: 22px;
+        line-height: 23px;
         padding: 16px 24px;
-        text-decoration: none;
         transition: all 200ms ease;
         box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        margin: 20px auto;
+       
+
     }
     button:hover {
         cursor: pointer;
-        background: #5e41a7;
+        background: #ffffff;
+        color: #1a64d6;
     }
     /* button styling end */
     /* list styling begin */
     ul {
         list-style: none;
-        margin: 0px;
+        margin: 0 auto;
         padding: 0px;
+        max-width: 400px;
+        
     }
     li {
-        margin: 10px;
-        padding: 24px;
+        margin: 1px;
+        padding: 5px;
         background-color: #ffffff;
         border-radius: 4px;
         transition: background-color 200ms ease;
@@ -76,7 +88,23 @@
         <br>
         Currently 21° in Tokyo
     </h1>
-    <h2>
-        13° / <strong>23°</strong>
+    <h2 class="ay">
+        <span style="font-weight: 300;">13° /</span> 23°
     </h2>
+    <ul class="ay">
+        <li>
+            <h3>🌧Tomorrow</h3>
+            <p>10° / <strong>22°</strong></p>
+        </li>
+        <li>
+            <h3>🌥 Saturday</h3>
+            <p>15° / <strong>17°</strong></p>
+        </li>
+        <li>
+            <h3>☀️ Sunday</h3>
+            <p>25° / <strong>28°</strong></p>
+        </li>
+    </ul>
+    <button> Change City</button>
+    <p>Coded by Trevin Nolan</p>
 </body>
